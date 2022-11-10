@@ -1,0 +1,172 @@
+:root {
+	--softred: hsl(10, 79%, 65%);
+	--cyan: hsl(186, 34%, 60%);
+	--darkbrown: hsl(25, 47%, 15%);
+	--medium_brown: hsl(28, 10%, 53%);
+	--cream: hsl(27, 54%, 86%);
+	--paleorange: hsl(29, 47%, 90%);
+	--DMSans: 'DM Sans', serif;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: var(--DMSans);
+}
+
+.container {
+	width: 400px;
+	background: var(--paleorange);
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.contents {
+	max-width: 95%;
+	margin: 0px auto;
+}
+
+.content-top {
+	border-radius: 10px;
+	display: grid;
+	background: var(--softred);
+	grid-template-columns: 1fr 1fr;
+}
+
+.balance {
+	display: inline-grid;
+	color: white;
+	row-gap: 3px;
+	margin: 20px;
+}
+
+.price{
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.content-top-img{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	padding-right: 20px;
+}
+
+.content-top img{
+	width: 60px;
+	height: 60px;
+}
+
+.content-bottom {
+	background: white;
+	margin-top: 15px;
+	border-radius: 10px;
+	padding-top: 15px;
+	padding-bottom: 8px;;
+}
+
+.spending {
+	font-weight: 700;
+	color: var(--darkbrown);
+	font-size: 1.5rem;
+}
+
+.content-bottom-content{
+	width: 90%;
+	margin: auto;
+}
+
+.bars{
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 15px;
+	border-bottom: 1px solid var(--paleorange);
+}
+
+.bar{
+	margin: 2px;
+	width: 35px;
+	border-radius: 3px;
+	background: var(--softred);
+	height: 0px;
+	display: inline-block;
+}
+
+.wed{
+	background: var(--cyan);
+}
+
+.barn{
+	text-align: center;
+}
+
+.barn p {
+	color: var(--medium_brown);
+	font-size: 0.7rem;
+	font-weight: 400;
+	margin: 2px;
+}
+
+.summary {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 20px auto;
+}
+
+.left {
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+	align-items: center;
+	text-align: left;
+}
+
+.total {
+	color: var(--medium_brown);
+}
+
+.total-price {
+	font-weight: 700;
+	font-size: 2rem;
+	color: var(--darkbrown)
+}
+
+.right {
+	text-align: right;
+	margin-top: 20px;
+}
+
+.perc {
+	font-weight: 700;
+}
+
+.time{
+	color: var(--medium_brown)
+}
+
+@media screen and (min-width: 641px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+.attribution {
+	font-size: 11px; 
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%); 
+}
