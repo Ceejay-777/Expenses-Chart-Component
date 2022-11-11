@@ -19,9 +19,9 @@ body{
 }
 
 .container {
+	width: 100vw;
 	background: var(--paleorange);
 	padding-top: 60px;
-	height: 100vh;
 }
 
 .contents {
