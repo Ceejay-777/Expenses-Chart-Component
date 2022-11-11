@@ -13,10 +13,25 @@ $.getJSON("data.json", function(data) {
                     } else {
                         $('.bar').eq(6).css('background', 'var(--cyan)')
                     }
-                    // $(this).parent().prev().children('.bar').css('background', 'var(--cyan)');
                 };
             };
         });
     });
+});
 
+$.getJSON("data.json", function(data) {
+    $('.bar').mouseover(function() {
+        var popup = $(this).siblings('.amount');
+        var classList = popup.attr('class').split(/\s+/);
+        $(data).each(function(index, value) {
+            if (classList.includes(value.day)) {
+                popup.text('$' + value.amount);
+                popup.css('visibility', 'visible');
+            };
+        });
+    });
+    $('.bar').mouseleave(function() {
+        var popup = $(this).siblings('.amount');
+        popup.css('visibility', 'hidden');
+    });
 })

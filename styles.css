@@ -81,12 +81,27 @@ body{
 
 .bars {
 	width: 100%;
-	padding-top: 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 	padding-bottom: 15px;
 	border-bottom: 2px solid var(--paleorange);
+	margin-top: 15px;
+}
+
+.amount {
+	width: 70px;
+	height: 40px;
+	background: var(--darkbrown);
+	margin-bottom: 5px;
+	border-radius: 5px;
+	font-size: 1.1rem;
+	color: white;
+	justify-content: center;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	visibility: hidden; 
 }
 
 .bar {
@@ -96,6 +111,11 @@ body{
 	height: 0px;
 	display: inline-block;
 	width: calc((100vw / 7) - 30px);
+}
+
+.bar:hover {
+	cursor: pointer;
+	filter: brightness(120%);
 }
 
 .barn{
