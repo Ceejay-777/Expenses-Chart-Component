@@ -19,7 +19,7 @@ body{
 }
 
 .container {
-	width: 400px;
+	/* width: 640px;  */
 	background: var(--paleorange);
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -66,7 +66,7 @@ body{
 	margin-top: 15px;
 	border-radius: 10px;
 	padding-top: 15px;
-	padding-bottom: 8px;;
+	padding-bottom: 5px;;
 }
 
 .spending {
@@ -81,25 +81,23 @@ body{
 }
 
 .bars{
+	width: 100%;
 	padding-top: 50px;
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
 	padding-bottom: 15px;
 	border-bottom: 1px solid var(--paleorange);
+	/* background: black;; */
 }
 
 .bar{
 	margin: 2px;
-	width: 35px;
+	width: calc((100vw / 7) - 25px);
 	border-radius: 3px;
 	background: var(--softred);
 	height: 0px;
 	display: inline-block;
-}
-
-.wed{
-	background: var(--cyan);
 }
 
 .barn{
