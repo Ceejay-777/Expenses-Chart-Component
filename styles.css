@@ -79,16 +79,6 @@ body{
 	margin: auto;
 }
 
-.bars {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
-	padding-bottom: 15px;
-	border-bottom: 2px solid var(--paleorange);
-	margin-top: 15px;
-}
-
 .amount {
 	width: 70px;
 	height: 40px;
@@ -104,22 +94,33 @@ body{
 	visibility: hidden; 
 }
 
+.bars {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-bottom: 15px;
+	border-bottom: 2px solid var(--paleorange);
+	margin-top: 15px;
+}
+
 .bar {
 	margin: 2px;
 	border-radius: 3px;
 	background: var(--softred);
 	height: 0px;
 	display: inline-block;
-	width: calc((100vw / 7) - 30px);
+	width: calc(100% / 7) ;
+}
+
+.barn{
+	text-align: center;
+	overflow: hidden;
 }
 
 .bar:hover {
 	cursor: pointer;
 	filter: brightness(120%);
-}
-
-.barn{
-	text-align: center;
 }
 
 .barn p {

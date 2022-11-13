@@ -7,15 +7,15 @@ $.getJSON("data.json", function(data) {
 
             if (classList.includes(val.day)) {
                 $(this).css('height', val.amount*3);
-                if (index === date.getDay()) {
-                    if (index !== 0) {
-                        $('.bar').eq((index%6-1)).css('background', 'var(--cyan)')
-                    } else {
-                        $('.bar').eq(6).css('background', 'var(--cyan)')
-                    }
                 };
+            if (index === date.getDay()) {
+                if (index !== 6) {
+                    $('.bar').eq(index-1).css('background', 'var(--cyan)')
+                } else {
+                    $('.bar').eq(0).css('background', 'var(--cyan)')
+                }           
             };
-        });
+        });''
     });
 });
 
