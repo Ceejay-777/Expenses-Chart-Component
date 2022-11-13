@@ -105,12 +105,11 @@ body{
 }
 
 .bar {
-	margin: 2px;
 	border-radius: 3px;
 	background: var(--softred);
 	height: 0px;
 	display: inline-block;
-	width: calc(100% / 7) ;
+	width: calc(100% - 5px) ;
 }
 
 .barn{
